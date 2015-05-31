@@ -1,0 +1,109 @@
+
+* {
+    border: 0px solid red !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width : 991px) {
+
+
+
+  * {
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+}
+
+@media only screen and (min-width : 991px) {
+  hr {
+      display: none;
+  }
+}
+
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+h1,h2 {
+  color : #294860;
+}
+
+h3 {
+  font-size: 26px;
+  color: #BCBBBB;
+}
+
+h4 {
+  font-size : 30px;
+  color: #13222d;
+  margin-bottom: 0px;
+}
+
+a:link, a:hover, a:visited, a:active {
+  color: #13222d;
+  text-decoration: none;
+}
+
+.url-project{
+  margin: 0px;
+}
+
+
+.grid {
+    margin: 0 auto;
+    /*I'm wondering why we would set a max-width for this class ?
+    Don't we want to take ALL the width possible, juste like for the .row ?*/
+    max-width: 1200px;
+    width: 100%;
+}
+
+.my_row {
+    margin-bottom: 20px;
+}
+
+.other-projects-content{
+    padding-top: 25px;
+}
+
+.hover-div:hover {
+  border: 1px solid #70797c !important;
+  cursor: pointer;
+}
+
+#header>*>a>img{
+  height: 140px;
+  width: auto;
+  display : block;
+}
+
+#separation {
+  height : 5px;
+  background-color: #BCBBBB;
+}
+
+#featured-work {
+  margin-bottom: 0px;
+}
+
+#other-projects{
+  height : 320px;
+}
