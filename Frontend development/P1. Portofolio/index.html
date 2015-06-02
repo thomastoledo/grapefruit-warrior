@@ -1,103 +1,99 @@
 <!DOCTYPE html>
-<html lang='fr'>
+<html lang="fr">
 <head>
-  <meta charset='utf-8'>
+  <meta charset="utf-8">
   <!--PLZ IE DO UR BEST-->
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- For mobile devices -->
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>Thomas TOLEDO's Portfolio</title>
-  <link rel='stylesheet' href='./bootstrap/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='./css/main.css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thomas TOLEDO"s Portfolio</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
 
-  <link href='http://fonts.googleapis.com/css?family=Raleway:100,100'
-    rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Raleway:100,100"
+    rel="stylesheet">
 </head>
 
 <body>
-  <!-- container class for Boostrap
-        grid class for me -->
-  <div class='container grid'>
+  <!-- container class for Boostrap -->
+  <section class="container">
 
-    <header class='row my_row' >
+    <header class="row" >
 
-      <div class='col-md-2'>
-        <a href='http://www.bytesbakery.com' target='_blank'>
+      <div class="col-md-2">
+        <a href="http://www.bytesbakery.com" target="-blank">
           <!-- I did not use the img-responsive class for the logo
           because I wanted to set my own dimensions. I set the responsiveness
           in the main.css file -->
-          <img src='./resources/logo.png' alt='Bytes Bakery logo'>
+          <img src="./resources/logo.png" alt="Bytes Bakery logo">
         </a>
       </div>
 
-      <div class='col-md-10 text-right' id='infos'>
+      <div class="col-md-10 text-right" id="infos">
         <h1>Thomas TOLEDO</h1>
         <h2>Grapefruit Warrior </h2>
       </div>
 
     </header>
 
-    <!--I put the id on the row and not the column
-    because I thougt it would make
-    more sense when I want to set the height-->
-    <div class='row my_row' id='separation'>
-      <div class='col-md-12'></div>
-    </div>
-
-    <div class='row my_row' id='banner'>
-      <div class='col-md-12'>
-        <a href='http://www.bytesbakery.com' target='_blank'>
-          <img src='./resources/banner.png' class='img-responsive' alt='Banner'>
+    <section class="row" id="banner">
+      <section class="col-md-12">
+        <a href="http://www.bytesbakery.com" target="-blank">
+          <img src="./resources/banner.png" class="img-responsive" alt="Banner">
         </a>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <!-- Maybe I should have created just one row instead of
-    'featured-work' and 'other-projects' separately ?-->
-    <div class='row my_row' id='featured-work'>
-      <div class='col-md-12'>
+
+    <section class="row" id="featured-work">
         <h3>Some of my Articles</h3>
-      </div>
-    </div>
+    </section>
 
-    <div class='row my_row text-center' id='other-projects'>
+    <section class="row text-center" id="other-projects">
 
-      <div class='col-md-4 other-projects-content hover-div'>
-        <img src='./resources/nodejs.png' class='img-responsive'
-          alt='Node.js'>
-        <h4>Node.js Performance</h4>
-        <p class='url-project' >
-          <a href='http://www.bytesbakery.com/blog/2014/11/02/performance-des-applications-nodejs/'
-            target='_blank'>
-            Monitoring Node.js Applications
-          </a>
-        </p>
-      </div>
-      <hr>
-      <div class='col-md-4 other-projects-content hover-div'>
-        <img src='./resources/perfsystem.png' class='img-responsive'
-          alt='System Performance'>
+      <a href="http://www.bytesbakery.com/blog/2014/11/02/performance-des-applications-nodejs/"
+        target="_blank">
+        <div class="col-md-4 other-projects-content hover-div"
+          data-toggle="modal" data-target="#myModal">
+          <img src="./resources/nodejs.png" class="img-responsive"
+            alt="Node.js">
+
+          <h4>Node.js Performance</h4>
+
+          <p class="url-project" >
+              Monitoring Node.js Applications
+          </p>
+        </div>
+      </a>
+
+      <a href="www.bytesbakery.com/blog/2015/03/23/system-performance-methodologie-et-analyses/"
+        target="_blank">
+      <div class="col-md-4 other-projects-content hover-div">
+        <img src="./resources/perfsystem.png" class="img-responsive"
+          alt="System Performance">
+
         <h4>System Performance</h4>
-        <p class='url-project' >
-          <a href='www.bytesbakery.com/blog/2015/03/23/system-performance-methodologie-et-analyses/'
-            target='_blank'>
-            How to deal with System Performance
-          </a>
-        </p>
-      </div>
-      <hr>
-      <div class='col-md-4 other-projects-content hover-div'>
-        <img src='./resources/sql.png' class='img-responsive' alt='NoSQL Matters'>
-        <h4>NoSQL Matters 2015</h4>
-        <p class='url-project' >
-          <a href='http://www.bytesbakery.com/blog/2015/03/30/nosql-matters-2015-la-review/'
-              target='_blank'>
-            Let's read the review !
-          </a>
-        </p>
-      </div>
 
-    </div>
-  </div>
+        <p class="url-project" >
+            How to deal with System Performance
+        </p>
+      </div>
+      </a>
+
+      <a href="http://www.bytesbakery.com/blog/2015/03/30/nosql-matters-2015-la-review/"
+          target="_blank">
+        <div class="col-md-4 other-projects-content hover-div">
+              <img src="./resources/sql.png" class="img-responsive" alt="NoSQL Matters">
+
+              <h4>NoSQL Matters 2015</h4>
+
+              <p class="url-project" >
+                  Let"s read the review !
+              </p>
+        </div>
+      </a>
+
+    </section>
+  </section>
 </body>
 </html>
