@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="gemStore">
+<head>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+
+  <!-- On bind le Controller via une Directive et on lui donne un alias -->
+  <product ng-controller="storeController as store">
+    <h1>{{store.product.name}}</h1>
+    <h2>{{store.product.price}}</h2>
+    <p>{{store.product.description}}</p>
+    <button ng-show="!store.product.soldOut">Purchase !</button>
+    <p ng-show="store.product.soldOut"> Sold Out </p>
+  </product>
+</body>
+</html>
