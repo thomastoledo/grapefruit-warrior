@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <!--PLZ IE DO UR BEST-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Thomas TOLEDO's Portfolio</title>
+
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+  <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <!-- container class for Boostrap -->
+  <section class="container">
+
+    <!-- Header -->
+    <header class="row text-left">
+      <div class="col-md-2" >
+          <img id="logo" src="./resources/logo.png" alt="Bytes Bakery logo">
+      </div>
+
+      <div class="col-md-10" id="infos">
+        <h1>Thomas TOLEDO</h1>
+        <p class="warrior">Grapefruit Warrior (also, Engineer in Computer Sciences)</p>
+      </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="row intro" id="banner">
+      <div class="col-md-12">
+          Hi everyone ! Welcome to my personal Web page. You'll learn here everything you need
+          to know about my profesional and personal work.
+      </div>
+    </section>
+
+    <!-- Who am I ?-->
+    <section class="row whoAmI" id="banner">
+      <div class="col-md-2">
+          <p>Who am I ?</p>
+      </div>
+      <div class="col-md-10 text-justify">
+          <p>
+            I'm a French 23 years old apprentice Computer Sciences Engineering, who will soon graduate from
+          the University of Technology of Compiegne. I am fond of Web technologies such as
+          <a href="https://docs.angularjs.org/">Angular.js</a> or <a href="https://nodejs.org/">Node.js</a>.
+          I also particularly enjoy learning new things about NoSQL technologies (the one I'm currently
+          learning is <a href="http://basho.com/products/">Riak</a>).
+          </p>
+
+          <p>
+            One of my project is <a href="http://www.bytesbakery.com">Bytes Bakery</a>, a website where
+          I am publishing everything I learn. It goes from
+          <a href="http://www.bytesbakery.com/blog/2014/01/15/logstash-application-data-warehouse/">
+          Logstash and Data Warehouses</a> to <a href="http://www.bytesbakery.com/blog/2014/11/02/performance-des-applications-nodejs/">
+          qualifying Node.js applications performances</a>. As I value knowledge sharing, it is opened
+          to anyone who is passionated about computing sciences and wants to share his/her experiences.
+          </p>
+      </div>
+    </section>
+
+    <!-- Fields of Expertise-->
+    <section class="row fieldsOfExpertise" id="banner">
+      <div class="col-md-2">
+          Fields of Expertise
+      </div>
+      <div class="col-md-10 text-justify table-responsive">
+        <table class="table-striped">
+          <tr><th>test</th> <th>machin</th></tr>
+          <tr><td>test</td><td>machin</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="row" id="featured-work">
+        <h3>Some of my Articles</h3>
+    </section>
+
+    <section class="row text-center" id="other-projects">
+
+<!--      <a href="http://www.bytesbakery.com/blog/2014/11/02/performance-des-applications-nodejs/"
+        target="_blank">-->
+        <div class="col-md-4 other-projects-content hover-div"
+          data-toggle="modal" data-target="#read-more">
+          <img src="./resources/nodejs.png" class="img-responsive"
+            alt="Node.js">
+
+          <h4>Node.js Performance</h4>
+
+          <p class="url-project" >
+              Monitoring Node.js Applications
+          </p>
+        </div>
+      <div class="col-md-4 other-projects-content hover-div"
+      data-toggle="modal" data-target="#read-more">
+        <img src="./resources/perfsystem.png" class="img-responsive"
+          alt="System Performance">
+
+        <h4>System Performance</h4>
+
+        <p class="url-project" >
+            How to deal with System Performance
+        </p>
+      </div>
+
+        <div class="col-md-4 other-projects-content hover-div"
+        data-toggle="modal" data-target="#read-more">
+              <img src="./resources/sql.png" class="img-responsive" alt="NoSQL Matters">
+
+              <h4>NoSQL Matters 2015</h4>
+
+              <p class="url-project" >
+                  Let"s read the review !
+              </p>
+        </div>
+
+    </section>
+  </section>
+
+
+  <!-- Modal -->
+
+<!-- This first div is basically a container -->
+<div class="modal fade" id="read-more" tabindex="-1" role="dialog"
+ aria-labelledby="read-more" aria-hidden="true">
+
+<!-- This box is the dialog designed by bootstrap
+ Without this, the modal will take all the width-->
+ <div class="modal-dialog">
+
+   <!-- This is the content
+   Without this, our modal is transparent (and ugly)-->
+   <div class="modal-content">
+
+     <!-- This is the header -->
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       <h4 class="modal-title" id="myModalLabel">NoSQL Matters</h4>
+     </div>
+
+     <!-- This is the body -->
+     <div class="modal-body">
+       J’ai eu l’occasion vendredi 27 mars d’assister aux conférences
+       de l’édition 2015 de la NoSQL Matters.
+       Comme promis, voici une petite review des différentes
+       conférences auxquelles j’ai assisté.
+     </div>
+
+     <!-- This is the footer -->
+     <div class="modal-footer">
+       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       <button type="button" class="btn btn-primary">Read More</button>
+     </div>
+   </div>
+ </div>
+
+</div>
+
+<!-- Script execution -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

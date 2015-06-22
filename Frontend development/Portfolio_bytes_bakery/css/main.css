@@ -1,0 +1,142 @@
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+
+/*
+ * Header's style
+ */
+header {
+
+  /* Here's the part for some border on the bottom */
+  padding-bottom: 5px;
+  border-bottom: 1px solid #bcbbbb;
+}
+
+
+/*
+ * Container
+ */
+.container {
+    margin: 0 auto;
+    /*I'm wondering why we would set a max-width for this class ?
+    Don't we want to take ALL the width possible, juste like for the .row ?*/
+    max-width: 70em;
+    width: 100%;
+}
+
+.container>* {
+  font-size: 18px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+
+/*
+ * responsive logo
+ */
+#logo{
+  max-height: 140px;
+  height: 140px;
+  width: auto;
+  display: block;
+}
+
+/*
+ * Titles styles
+ */
+h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h1,.warrior {
+  color: #294860;
+}
+
+h3 {
+  font-size: 26px;
+  color: #bcbbbb;
+}
+
+h4 {
+  font-size: 30px;
+  color: #13222d;
+  margin-bottom: 0;
+}
+
+#infos {
+  position: relative;
+  margin-top: 26px;
+}
+
+
+/*
+ * Intro section
+ */
+.intro {
+  /* Here's the part for some border on the bottom */
+  margin-top: 0;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #bcbbbb;
+}
+
+/*
+ * Who am I section
+ */
+
+
+
+/* Link's decoration */
+a:link, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+
+
+/*
+ * Projects section
+ */
+.other-projects-content{
+    padding-top: 25px;
+}
+
+.url-project {
+  margin: 0;
+}
+
+
+.hover-div:hover {
+  border: 1px solid #70797c !important;
+  cursor: pointer;
+}
+
+
+#featured-work {
+  margin-bottom: 0;
+}
+
+#other-projects{
+  height: 320px;
+}
+
+
+/*
+ * Media Queries
+ */
+
+ /* Quand la page est petite, on s'assure de toujours tout centrer*/
+
+ @-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
